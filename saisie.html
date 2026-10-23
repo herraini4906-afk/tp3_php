@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saisie des notes</title>
+</head>
+<body>
+
+    <h1>Suivi des notes des apprenants</h1>
+    <h2>Formulaire de saisie</h2>
+
+    <form action="traitement.php" method="POST">
+
+        <p>
+            <label for="nom">Nom de l'apprenant :</label><br>
+            <input type="text" id="nom" name="nom"
+                   maxlength="100" required>
+        </p>
+
+        <p>
+            <label for="note">Note sur 20 :</label><br>
+            <input type="number" id="note" name="note"
+                   min="0" max="20" step="0.01" required>
+        </p>
+
+        <button type="submit">Enregistrer la note</button>
+        <button type="reset">Effacer</button>
+
+    </form>
+
+    <p>
+        <a href="liste.php">Consulter la liste des notes</a>
+    </p>
+
+    <p>
+        <a href="export.php">Exporter les notes en JSON</a>
+    </p>
+
+    <p>
+        <a href="exo3_tableaux.php">Retour à l'exercice 3</a>
+    </p>
+
+</body>
+</html>
